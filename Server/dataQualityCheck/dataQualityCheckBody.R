@@ -35,11 +35,11 @@ output$dataQualityCheckDisplay <- renderUI({
         solidHeader = TRUE,
         status = "primary",
         width = 12,
-        box(width = 4,
+        box(width = 12,
             DT::dataTableOutput("summary_results")),
-        box(width = 4,
+        box(width = 6,
             plotlyOutput("activities_summary")),
-        box(width = 4,
+        box(width = 6,
             plotlyOutput("resources_summary"))
       )
     )

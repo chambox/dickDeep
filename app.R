@@ -8,6 +8,7 @@ library(shinyWidgets)
 library(xesreadR)
 library(tidyverse)
 library(bupaR)
+library(plotly)
 
 source("utils.R")
 

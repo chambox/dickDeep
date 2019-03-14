@@ -177,10 +177,9 @@ output$activities_summary <- renderPlotly({
       group_by(Activity) %>%
       plot_ly(labels = ~Activity, values = ~`Absolute Freq`) %>%
       add_pie(hole = 0.6) %>%
-      layout(title = "Donut charts of activities",  showlegend = F,
+      layout(title = "Donut charts of activities",  showlegend = TRUE,
              xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
-             yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
-             showlegend = TRUE)
+             yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
     plot_donut 
 
   }
@@ -193,10 +192,9 @@ output$resources_summary <- renderPlotly({
       group_by(Resource) %>%
       plot_ly(labels = ~Resource, values = ~`Absolute Freq`) %>%
       add_pie(hole = 0.6) %>%
-      layout(title = "Donut charts of resources",  showlegend = F,
+      layout(title = "Donut charts of resources",  showlegend = TRUE,
              xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
-             yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
-             showlegend = TRUE)
+             yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
     plot_donut 
   }
 })
